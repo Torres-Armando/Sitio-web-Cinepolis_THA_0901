@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinépolis - Torres Hernandez Armando </title>
+    <style>
+        /* ESTILOS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+
+        /* ENCABEZADO */
+        header {
+            background-color: #0b1f41;
+            color: #ffcc00; 
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        /* BARRA DE NAVEGACIÓN */
+        nav {
+            background-color: #061227;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* SECCION Y CONTENEDOR */
+        .contenedor {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .seccion {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #ffcc00;
+        }
+
+        h2 {
+            color: #0b1f41;
+            margin-top: 0;
+        }
+
+        /* TARJETAS DE PELÍCULAS */
+        .grid-peliculas {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta-pelicula {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            width: 200px;
+            background-color: #fafafa;
+            text-align: center;
+        }
+
+        .tarjeta-pelicula img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .tarjeta-pelicula h3 {
+            font-size: 16px;
+            color: #0b1f41;
+            margin: 10px 0 5px 0;
+        }
+
+        .horarios {
+            background-color: #ffcc00;
+            color: #0b1f41;
+            padding: 5px;
+            font-weight: bold;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        /* FORMULARIOS DE REGISTRO */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #0b1f41;
+        }
+
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #0b1f41;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #14356e;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0b1f41;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>CINEPOLIS</h1>
+        <p>Las Mejores peliculas nosotros las tenemos</p>
+    </header>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav>
+        <a href="#cartelera">Cartelera</a>
+        <a href="#estrenos">Próximos Estrenos</a>
+        <a href="#club">Club Cinépolis</a>
+        <a href="#login">Iniciar Sesión</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="contenedor">
+
+        <!-- 3. SECCIÓN EN CARTELERA -->
+        <section id="cartelera" class="seccion">
+            <h2>En Cartelera</h2>
+            <div class="grid-peliculas">
+                
+                <div class="tarjeta-pelicula">
+                    <img src="planeta.jpg" alt="Superhéroe">
+                    <h3>El Planeta del Tesoro</h3>
+                    <p><strong>Género:</strong>Infantil/Aventura</p>
+                    <div class="horarios">14:00 | 16:30 | 19:00</div>
+                </div>
+
+                <div class="tarjeta-pelicula">
+                    <img src="estacion.jpg" alt="Espacio">
+                    <h3>Estación Zombie</h3>
+                    <p><strong>Género:</strong>Acción/Terror</p>
+                    <div class="horarios">15:10 | 18:00 | 20:45</div>
+                </div>
+
+                <div class="tarjeta-pelicula">
+                    <img src="sinbad.jpg" alt="Animación">
+                    <h3>Sinbad: la leyenda de los siete mares</h3>
+                    <p><strong>Género:</strong> Infantil/Aventura</p>
+                    <div class="horarios">13:00 | 15:00 | 17:15</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN PRÓXIMOS ESTRENOS -->
+        <section id="estrenos" class="seccion">
+            <h2>Próximos Estrenos</h2>
+            <div class="grid-peliculas">
+                
+                <div class="tarjeta-pelicula">
+                    <img src="turbo.jpg" alt="Carreras">
+                    <h3>Turbo</h3>
+                    <p><strong>Estreno:</strong> 24 de Noviembre</p>
+                </div>
+
+                <div class="tarjeta-pelicula">
+                    <img src="bella.jpg" alt="Fantasía">
+                    <h3>La Bella Durmiente</h3>
+                    <p><strong>Estreno:</strong> 1 de Diciembre</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN CLUB CINÉPOLIS -->
+        <section id="club" class="seccion">
+            <h2>Club Cinépolis</h2>
+            <p>Ingresa los datos de tu tarjeta para consultar tus puntos y beneficios.</p>
+            <form action="#" method="get">
+                <label for="tarjeta">Número de Tarjeta:</label>
+                <input type="text" id="tarjeta" placeholder="Ejemplo: 1234 5678 9012" required>
+                <button type="submit">Consultar Tarjeta</button>
+            </form>
+        </section>
+
+        <!-- SECCIÓN INICIAR SESIÓN / REGISTRO -->
+        <section id="login" class="seccion">
+            <h2>Iniciar Sesión / Registro</h2>
+            <form action="#" method="get">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" placeholder="correo@ejemplo.com" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+
+                <button type="submit">Entrar a mi Cuenta</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>| Torres Hernandez Armando | 0901 | 5°J |</p>
+    </footer>
+
+</body>
+</html>
